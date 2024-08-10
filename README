@@ -16,9 +16,8 @@ Data Sources
     Supplementary APIs: Additional data from NFL APIs or other public sources.
     Web Scraping: Data gathered from reputable sports websites if necessary.
 
-Setup Instructions
-Prerequisites
 
+Programming Languages
     Python 3.x: Make sure you have Python installed.
     Git: Version control system to manage the project.
     Jupyter Notebook: For running and sharing notebooks.
