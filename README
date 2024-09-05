@@ -1,21 +1,27 @@
-NFL Team Success Analysis
+QB College passing grades translate to NFL passing success Analysis
 Overview
 
-This project aims to analyze various factors contributing to the success of NFL teams. Using data from Pro Football Focus (PFF) and other sources, we will explore key metrics such as team performance, player statistics, and game conditions to determine what drives winning seasons in the NFL.
-Project Structure
+This project aims to analyze various factors contributing to the success of college QBs to the NFL. Using data from Pro Football Focus (PFF) and other sources, we will explore key metrics such as Big time throw percentage (BTT), player statistics, and game conditions to determine what factors more translate to QB NFL success in the NFL.
 
-    data/: Contains raw and processed datasets used in the analysis.
-    scripts/: Includes scripts for data collection, cleaning, and analysis.
-    notebooks/: Jupyter notebooks for exploratory data analysis and visualization.
-    results/: Final reports, visualizations, and any derived data products.
-    README.md: Overview of the project, setup instructions, and how to contribute.
+project-directory/
+│
+├── data/
+│   ├── nfl_passing_grades.csv
+│   └── ncaa_passing_grades.csv
+│
+├── scripts/
+│   ├── producer_nfl.py
+│   ├── producer_ncaa.py
+│   ├── consumer_nfl.py
+│   └── consumer_ncaa.py
+│
+├── README.md
+└── .gitignore
+
 
 Data Sources
 
     Pro Football Focus (PFF): Detailed player and team statistics.
-    Supplementary APIs: Additional data from NFL APIs or other public sources.
-    Web Scraping: Data gathered from reputable sports websites if necessary.
-
 
 Programming Languages
     Python 3.x: Make sure you have Python installed.
