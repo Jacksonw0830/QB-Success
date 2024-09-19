@@ -49,7 +49,7 @@ Extraction:
    The Kafka consumer extracts real-time data from the qb-performance topic.
 
 Transformation:
-   Data is cleaned and aggregated for analysis, with key metrics like Average Depth of Target (ADoT) and Passing Grades being calculated.
+   Data is cleaned and aggregated for analysis, with key metrics like Big Time Throw (BTT)  and Passing Grades being calculated.
 
 Loading:
    The transformed data is loaded into a pandas DataFrame for visualization and further analysis.
