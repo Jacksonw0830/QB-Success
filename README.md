@@ -63,7 +63,7 @@ for message in consumer:
 
 # Transformation example
 nfl_data = pd.read_csv('passing_summary(2022).csv')
-transformed_data = nfl_data.groupby('year').agg({'avg_depth_of_target': 'mean', 'grades_pass': 'mean'})
+transformed_data = nfl_data.groupby('year').agg({'big_time_throws': 'mean', 'grades_pass': 'mean'})
 
 # Loading data for visualization
 transformed_data.to_csv('transformed_data.csv')
