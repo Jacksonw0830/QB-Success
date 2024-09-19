@@ -7,6 +7,13 @@ This project analyzes the performance of NFL quarterbacks over the past decade (
 - **Data Source**: The data was collected from passing summary files from 2014 to 2023 provided by Pro Football Focus (PFF).
 - **Analysis**: The scatter plots show the relationship between ADoT and Passing Grades for each year, along with linear regression lines and R-values to indicate the strength of the correlation.
 
+#Insights
+
+This analysis helps identify trends over the years:
+
+1. Are QBs with higher ADoT more effective in a particular year?
+2. How consistent is the relationship between ADoT and performance over time?
+
 ## Development Environment
 This project was developed using **Windows Subsystem for Linux (WSL)** and **Python 3**. Follow the steps below to set up the environment:
 
@@ -19,7 +26,7 @@ If Python 3 is not installed, you can install it with:
 	sudo apt update
 	sudo apt install python3
 
-Apache Kafka KRaft Server Integration
+#Apache Kafka KRaft Server Integration
 
 This project uses Apache Kafka (KRaft mode) to stream NFL quarterback data and feed it into the ETL pipeline for analysis. Kafka allows for real-time data streaming, ensuring efficient data collection and processing.
 
@@ -28,12 +35,14 @@ Kafka Server (KRaft mode): The project uses Kafka in KRaft mode for simplified d
 
 Kafka Producer:
 The producer sends NFL QB performance data to the Kafka topic qb-performance. Data is simulated or extracted and sent in real-time.
+
 	kafka-console-producer.sh --topic qb-performance --bootstrap-server localhost:9092
 
 The Kafka consumer listens for messages on the qb-performance topic. Here's the command to start the consumer:
+
 	kafka-console-consumer.sh --topic qb-performance --from-beginning --bootstrap-server localhost:9092
 
-ETL Process
+#ETL Process
 
 The ETL (Extraction, Transformation, and Loading) pipeline processes NFL QB performance data from Kafka and prepares it for analysis.
 
@@ -60,15 +69,7 @@ transformed_data = nfl_data.groupby('year').agg({'avg_depth_of_target': 'mean', 
 # Loading data for visualization
 transformed_data.to_csv('transformed_data.csv')
 
-#Insights
-
-This analysis helps identify trends over the years:
-
-    Are QBs with higher ADoT more effective in a particular year?
-    How consistent is the relationship between ADoT and performance over time?
-
-Visualization
-
+#Visualization
 See attached file.
 
 Setup Instructions
