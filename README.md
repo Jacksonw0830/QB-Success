@@ -71,7 +71,7 @@ transformed_data.to_csv('transformed_data.csv')
 ## Visualization
 Below is the visualization of  **BTT vs Passing Grades** for quarterbacks between 2014 and 2023:
 
-![QB Performance Plot](./qb_performance_plot.png)
+![QB Performance Plot](./BTTvPG.png)
 
 
 ## Setup Instructions
