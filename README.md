@@ -7,6 +7,15 @@ This project analyzes the performance of NFL quarterbacks over the past decade (
 - **Data Source**: The data was collected from passing summary files from 2014 to 2023 in Pro Football Focus database.
 - **Analysis**: The scatter plots show the relationship between ADoT and Passing Grades for each year, along with linear regression lines and R-values to indicate the strength of correlation.
 
+## Development Environment
+
+This project was developed using **Windows Subsystem for Linux (WSL)** and **Python 3**. You will need the following setup to run the analysis:
+
+1. **WSL**: You can install WSL on your Windows machine by following the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/install).
+2. **Python 3**: Ensure Python 3 is installed in your WSL environment. You can check the installation by running:
+   ```bash
+   python3 --version
+
 ## Insights
 This analysis helps identify trends over the years:
 - Are QBs with higher ADoT more effective in a particular year?
