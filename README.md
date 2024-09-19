@@ -1,7 +1,7 @@
-# QB Performance Analysis: ADoT vs Passing Grades (2014-2023)
+# QB Performance Analysis: Big-Time Throws (BTT) and Passing Grades (2014-2023)
 
 ## Overview
-This project analyzes the performance of NFL quarterbacks over the past decade (2014-2023) using **Average Depth of Target (ADoT)** and **Passing Grades** from Pro Football Focus (PFF). The project integrates **Apache Kafka** (KRaft mode) and follows the **ETL** process to analyze the data and visualize trends.
+This project analyzes the performance of NFL quarterbacks over the past decade (2014-2023) using **Big Time Throw (BTT)** and **Passing Grades** from Pro Football Focus (PFF). The project integrates **Apache Kafka** (KRaft mode) and follows the **ETL** process to analyze the data and visualize trends.
 
 ## Insights
 
