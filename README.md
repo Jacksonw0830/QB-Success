@@ -3,16 +3,15 @@
 ## Overview
 This project analyzes the performance of NFL quarterbacks over the past decade (2014-2023) using **Average Depth of Target (ADoT)** and **Passing Grades** from Pro Football Focus (PFF). The project integrates **Apache Kafka** (KRaft mode) and follows the **ETL** process to analyze the data and visualize trends.
 
-## Key Features
-- **Data Source**: The data was collected from passing summary files from 2014 to 2023 provided by Pro Football Focus (PFF).
-- **Analysis**: The scatter plots show the relationship between ADoT and Passing Grades for each year, along with linear regression lines and R-values to indicate the strength of the correlation.
-
 ## Insights
 
-This analysis helps identify trends over the years:
+This analysis focuses on the relationship between **Big-Time Throws (BTT)** and **Passing Grades**. BTT measures a quarterback's ability to make difficult, high-value throws, which often result in better performance ratings.
 
-1. Are QBs with higher ADoT more effective in a particular year?
-2. How consistent is the relationship between ADoT and performance over time?
+The scatter plots below show how quarterbacks with more BTT correlate with higher passing grades across multiple seasons (2014-2023).
+
+### Key Questions:
+1. Are QBs with more Big-Time Throws (BTT) graded higher in a particular season?
+2. How consistent is the relationship between BTT and Passing Grades across multiple years?
 
 ## Development Environment
 This project was developed using **Windows Subsystem for Linux (WSL)** and **Python 3**. Follow the steps below to set up the environment:
@@ -70,7 +69,10 @@ transformed_data = nfl_data.groupby('year').agg({'avg_depth_of_target': 'mean', 
 transformed_data.to_csv('transformed_data.csv')
 
 ## Visualization
-See attached file.
+Below is the visualization of  **BTT vs Passing Grades** for quarterbacks between 2014 and 2023:
+
+![QB Performance Plot](./qb_performance_plot.png)
+
 
 ## Setup Instructions
 
