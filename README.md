@@ -72,7 +72,7 @@ transformed_data.to_csv('transformed_data.csv')
 ## Visualization
 See attached file.
 
-Setup Instructions
+## Setup Instructions
 
 To run this analysis or generate similar visualizations:
 
